@@ -19,5 +19,8 @@ export const MainContainer = styled.div`
 
 export const Content = styled.div`
   flex: 1;
+`;
+export const ChildrenContent = styled.div`
+  flex: 1;
   padding: 20px;
 `;

@@ -1,7 +1,9 @@
 import type { ReactNode } from 'react';
 import React from 'react';
 
+import Menu from '@/components//Menu';
 import {
+  ChildrenContent,
   Content,
   LayoutContainer,
   MainContainer,
@@ -19,7 +21,10 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       <Toolbar />
       <MainContainer>
         <Sidebar />
-        <Content>{children}</Content>
+        <Content>
+          <Menu />
+          <ChildrenContent>{children}</ChildrenContent>
+        </Content>
       </MainContainer>
     </LayoutContainer>
   );

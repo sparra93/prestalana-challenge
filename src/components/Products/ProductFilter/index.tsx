@@ -17,6 +17,8 @@ import {
 import { selectProducts } from '@/redux/features/productSlice';
 import { getUnique } from '@/shared/helpers/filter';
 
+import { FilterContainer } from './ProductFilter.style';
+
 interface ProductFilterProps {}
 
 const ProductFilter: React.FC<ProductFilterProps> = () => {
@@ -46,13 +48,13 @@ const ProductFilter: React.FC<ProductFilterProps> = () => {
   };
 
   return (
-    <>
-      Filtros
+    <FilterContainer>
+      Filters
       <YearFilter onChange={onChangeYear} options={yearsOptions} />
       <ColorFilter onChange={onChangeColor} options={colorOptions} />
       <PantoneFilter onChange={onChangePantone} options={pantoneOptions} />
       <NameFilter onChange={onChangeName} />
-    </>
+    </FilterContainer>
   );
 };
 

@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
 export const Item = styled.div`
-  padding: 10px;
+  a {
+    text-decoration: none;
+  }
+  font-size: 16px;
+  margin: 0 10px;
   cursor: pointer;
+
   &:hover {
-    background-color: #e9ecef;
+    color: #0070f3;
   }
 `;
