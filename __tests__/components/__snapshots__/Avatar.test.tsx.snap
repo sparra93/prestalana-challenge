@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-d5fbb163-0 eTSrFH"
+  >
+    <img
+      alt="User Avatar"
+      class="sc-d5fbb163-1 eJNQmk"
+      src="https://reqres.in/img/faces/7-image.jpg"
+    />
+    <div
+      class="sc-d5fbb163-2 fXMFxl"
+    >
+      <span
+        class="sc-d5fbb163-3 ldmCxV"
+      >
+        Michael
+      </span>
+      <span
+        class="sc-d5fbb163-4 HZnYy"
+      >
+        michael.lawson@reqres.in
+      </span>
+      <button
+        class="sc-d5fbb163-5 jFahZb"
+      >
+        Cerrar Sesión
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

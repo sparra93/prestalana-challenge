@@ -2,24 +2,11 @@ import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
 
 import type { RootState } from '@/redux//store';
-
-interface FilterState {
-  yearFilter: string[];
-  colorFilter: string[];
-  pantoneFilter: string[];
-  nameFilter: string;
-}
-
-const initialState: FilterState = {
-  yearFilter: [],
-  colorFilter: [],
-  pantoneFilter: [],
-  nameFilter: '',
-};
+import { filterSliceInitialState } from '@/shared/constants/filter';
 
 const filterSlice = createSlice({
   name: 'filters',
-  initialState,
+  initialState: filterSliceInitialState,
   reducers: {
     setInitialYearFilter: (state, action: PayloadAction<string[]>) => {
       state.yearFilter = action.payload;

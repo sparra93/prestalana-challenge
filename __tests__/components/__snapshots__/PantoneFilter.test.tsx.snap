@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PantoneFilter Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-744fc5c6-0 duDilm"
+    draggable="false"
+  >
+    <div
+      class="sc-744fc5c6-1 erZYpt"
+    >
+      <span>
+        Pantone
+      </span>
+    </div>
+    <div
+      class="sc-744fc5c6-2 dYyKkL"
+    >
+      <ul
+        class="sc-59331570-0 iUuOye"
+      >
+        <li
+          class="sc-59331570-1 iOinvi"
+        >
+          <input
+            class="sc-59331570-3 hbfaQV"
+            data-testid="checkbox-2000"
+            id="checkbox-2000"
+            name="checkbox-2000"
+            type="checkbox"
+            value="2000"
+          />
+          <label
+            class="sc-59331570-2 cVjGuP"
+            for="checkbox-2000"
+          >
+            2000
+          </label>
+        </li>
+        <li
+          class="sc-59331570-1 iOinvi"
+        >
+          <input
+            class="sc-59331570-3 hbfaQV"
+            data-testid="checkbox-2001"
+            id="checkbox-2001"
+            name="checkbox-2001"
+            type="checkbox"
+            value="2001"
+          />
+          <label
+            class="sc-59331570-2 cVjGuP"
+            for="checkbox-2001"
+          >
+            2001
+          </label>
+        </li>
+        <li
+          class="sc-59331570-1 iOinvi"
+        >
+          <input
+            class="sc-59331570-3 hbfaQV"
+            data-testid="checkbox-2002"
+            id="checkbox-2002"
+            name="checkbox-2002"
+            type="checkbox"
+            value="2002"
+          />
+          <label
+            class="sc-59331570-2 cVjGuP"
+            for="checkbox-2002"
+          >
+            2002
+          </label>
+        </li>
+        <li
+          class="sc-59331570-1 iOinvi"
+        >
+          <input
+            class="sc-59331570-3 hbfaQV"
+            data-testid="checkbox-2003"
+            id="checkbox-2003"
+            name="checkbox-2003"
+            type="checkbox"
+            value="2003"
+          />
+          <label
+            class="sc-59331570-2 cVjGuP"
+            for="checkbox-2003"
+          >
+            2003
+          </label>
+        </li>
+        <li
+          class="sc-59331570-1 iOinvi"
+        >
+          <input
+            class="sc-59331570-3 hbfaQV"
+            data-testid="checkbox-2004"
+            id="checkbox-2004"
+            name="checkbox-2004"
+            type="checkbox"
+            value="2004"
+          />
+          <label
+            class="sc-59331570-2 cVjGuP"
+            for="checkbox-2004"
+          >
+            2004
+          </label>
+        </li>
+        <li
+          class="sc-59331570-1 iOinvi"
+        >
+          <input
+            class="sc-59331570-3 hbfaQV"
+            data-testid="checkbox-2005"
+            id="checkbox-2005"
+            name="checkbox-2005"
+            type="checkbox"
+            value="2005"
+          />
+          <label
+            class="sc-59331570-2 cVjGuP"
+            for="checkbox-2005"
+          >
+            2005
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;

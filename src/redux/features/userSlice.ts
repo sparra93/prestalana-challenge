@@ -3,27 +3,12 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import type { RootState } from '@/redux//store';
 import { getUserList } from '@/services/auth';
 import { EMAIL_NAME, TOKEN_NAME } from '@/shared/constants/sessionStorage';
+import { userSliceInitialState } from '@/shared/constants/user';
 import type { IProduct } from '@/shared/Interfaces/Product.interface';
 import type {
   IUserInfo,
   IUserListResponse,
 } from '@/shared/Interfaces/User.interface';
-
-interface UserState {
-  userInfo: IUserInfo | null;
-  loading: boolean;
-  error: boolean;
-  loaded: boolean;
-  favorites: IProduct[];
-}
-
-const initialState: UserState = {
-  userInfo: null,
-  error: false,
-  loading: false,
-  loaded: false,
-  favorites: [],
-};
 
 export const getUser = createAsyncThunk(
   'user/getUser',
@@ -37,7 +22,7 @@ export const getUser = createAsyncThunk(
 
 const userSlice = createSlice({
   name: 'user',
-  initialState,
+  initialState: userSliceInitialState,
   reducers: {
     logout() {
       sessionStorage.removeItem(TOKEN_NAME);

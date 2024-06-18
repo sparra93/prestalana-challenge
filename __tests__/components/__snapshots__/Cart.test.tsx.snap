@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-40b35703-0 jYWBCy"
+  >
+    <h2
+      class="sc-40b35703-1 jRrtTp"
+    >
+      Mi Carrito
+    </h2>
+    <div
+      class="sc-40b35703-2 gSPIwx"
+    >
+      <div
+        class="sc-40b35703-3 dGZvXn"
+      >
+        <span
+          class="sc-40b35703-4 cNJDYj"
+        >
+          cerulean
+        </span>
+        <span
+          class="sc-40b35703-5 jhRvez"
+        >
+          2000
+        </span>
+      </div>
+      <span
+        class="sc-40b35703-6 cbSndx"
+      >
+        Qty 1
+      </span>
+    </div>
+    <div
+      class="sc-40b35703-2 gSPIwx"
+    >
+      <div
+        class="sc-40b35703-3 dGZvXn"
+      >
+        <span
+          class="sc-40b35703-4 cNJDYj"
+        >
+          fuchsia rose
+        </span>
+        <span
+          class="sc-40b35703-5 jhRvez"
+        >
+          2001
+        </span>
+      </div>
+      <span
+        class="sc-40b35703-6 cbSndx"
+      >
+        Qty 1
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;

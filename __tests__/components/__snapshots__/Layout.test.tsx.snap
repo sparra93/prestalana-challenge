@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-aa734ecb-0 hUWNgF"
+  >
+    <header
+      class="sc-ece30d93-0 hPavrx"
+    >
+      <h1
+        class="sc-ece30d93-1 dQbGoR"
+      >
+        My Personal Dashboard
+      </h1>
+      <a
+        data-testid="go-to-cart"
+        href="/cart"
+      >
+        <div
+          class="sc-ece30d93-2 ejPOtw"
+        >
+          <img
+            alt="Cart Icon"
+            class="sc-ece30d93-3 cwysBr"
+            src="/assets/icons/shopping-bag.png"
+          />
+          <div
+            class="sc-ece30d93-4 ekOwio"
+          >
+            0
+          </div>
+        </div>
+      </a>
+    </header>
+    <div
+      class="sc-aa734ecb-1 nPLO"
+    >
+      <section
+        class="sc-6d8e35a2-0 bpKibS"
+      >
+        <div
+          class="sc-d5fbb163-0 eTSrFH"
+        >
+          <img
+            alt="User Avatar"
+            class="sc-d5fbb163-1 eJNQmk"
+          />
+          <div
+            class="sc-d5fbb163-2 fXMFxl"
+          >
+            <span
+              class="sc-d5fbb163-3 ldmCxV"
+            />
+            <span
+              class="sc-d5fbb163-4 HZnYy"
+            />
+            <button
+              class="sc-d5fbb163-5 jFahZb"
+            >
+              Cerrar Sesión
+            </button>
+          </div>
+        </div>
+      </section>
+      <div
+        class="sc-aa734ecb-2 leAkJT"
+      >
+        <div>
+          Content
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

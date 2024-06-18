@@ -3,6 +3,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 import type { RootState } from '@/redux/store';
 import { fetchProducts } from '@/services/products';
+import { productSliceInitialState } from '@/shared/constants/products';
 import { EMAIL_NAME, FAVORITES_NAME } from '@/shared/constants/sessionStorage';
 import {
   getFromLocalStorage,
@@ -15,26 +16,6 @@ import type {
   IProductsResponse,
 } from '@/shared/Interfaces/Product.interface';
 
-interface ProductsState {
-  products: IProduct[];
-  cart: ICartProduct[];
-  favorites: IProduct[];
-  loading: boolean;
-  error: boolean;
-  loaded: boolean;
-  cartCountTotal: number;
-}
-
-const initialState: ProductsState = {
-  products: [],
-  cart: [],
-  favorites: [],
-  error: false,
-  loading: false,
-  loaded: false,
-  cartCountTotal: 0,
-};
-
 export const getAll = createAsyncThunk('products/getAll', async () => {
   const response = await fetchProducts();
   const data: IProductsResponse = await response.json();
@@ -43,7 +24,7 @@ export const getAll = createAsyncThunk('products/getAll', async () => {
 
 const productSlice = createSlice({
   name: 'products',
-  initialState,
+  initialState: productSliceInitialState,
   reducers: {
     addToCart(state, action: PayloadAction<IProduct>) {
       const { id } = action.payload;

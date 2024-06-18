@@ -44,7 +44,7 @@ const LoginForm: React.FC<ILoginFormProps> = (): ReactElement => {
 
   return (
     <Container>
-      <Form onSubmit={onSubmit}>
+      <Form onSubmit={onSubmit} data-testid="login-form">
         <Logo src="/assets/icons/user.png" alt="Login Logo" />
         <Label htmlFor={LoginFormInput.EMAIL.ID}>
           {LoginFormInput.EMAIL.LABEL}

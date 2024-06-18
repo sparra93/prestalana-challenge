@@ -23,3 +23,13 @@ export interface ISupport {
 export interface ICartProduct extends IProduct {
   quantity: number;
 }
+
+export interface IProductsState {
+  products: IProduct[];
+  cart: ICartProduct[];
+  favorites: IProduct[];
+  loading: boolean;
+  error: boolean;
+  loaded: boolean;
+  cartCountTotal: number;
+}

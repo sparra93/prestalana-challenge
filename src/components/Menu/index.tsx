@@ -9,12 +9,12 @@ const Menu: React.FC = () => {
     <MenuContainer>
       <MenuItem>Products</MenuItem>
       <SubMenuContainer>
-        <Link href="/products/list" passHref>
+        <Link href="/products/list" passHref data-testid="product-list-page">
           <MenuItem>List</MenuItem>
         </Link>
       </SubMenuContainer>
       <SubMenuContainer>
-        <Link href="/cart" passHref>
+        <Link href="/cart" passHref data-testid="cart-page">
           <MenuItem>Cart</MenuItem>
         </Link>
       </SubMenuContainer>

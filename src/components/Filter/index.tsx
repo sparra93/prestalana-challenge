@@ -18,9 +18,7 @@ const CheckBoxFilter: React.FC<CheckBoxFilterProps> = ({
   options,
   optionsSelected,
 }) => {
-  const handleYearChange = (
-    event: React.ChangeEvent<HTMLInputElement>,
-  ): void => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
     const { value } = event.target;
     onChange(value);
   };
@@ -30,11 +28,13 @@ const CheckBoxFilter: React.FC<CheckBoxFilterProps> = ({
       {options.map((option) => (
         <CheckboxListItem key={`checkbox-${option}`}>
           <CheckboxInput
+            id={`checkbox-${option}`}
+            data-testid={`checkbox-${option}`}
             name={`checkbox-${option}`}
             type="checkbox"
             value={option}
             checked={optionsSelected.includes(option)}
-            onChange={handleYearChange}
+            onChange={handleChange}
           />
           <CheckboxLabel htmlFor={`checkbox-${option}`}>{option}</CheckboxLabel>
         </CheckboxListItem>

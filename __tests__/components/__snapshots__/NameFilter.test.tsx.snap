@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NameFilter Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-744fc5c6-0 duDilm"
+    draggable="false"
+  >
+    <div
+      class="sc-744fc5c6-1 erZYpt"
+    >
+      <span>
+        Nombre
+      </span>
+    </div>
+    <div
+      class="sc-744fc5c6-2 dYyKkL"
+    >
+      <input
+        class="sc-93af5939-0 bHotKZ"
+        placeholder="Product name"
+        type="text"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

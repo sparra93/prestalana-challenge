@@ -28,6 +28,6 @@
       "@/styles": ["./src/styles/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "__test__/index.test.ts"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "__tests__/index.test.tsx", "jest.setup.ts"],
+  "exclude": ["node_modules", "jest.setup.ts"]
 }
