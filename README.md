@@ -46,14 +46,14 @@ I have defined the following folder structure
 
 <img src="https://i.ibb.co/8YLHLfM/structure.png">
 
-`__mocks__` : All dummy data for tests
-`__tests__` : All unit tests
-`__components__` : All the components that are used in the whole application. If some component has some constant, an interface or something that will be used only in that component, I declare it and create it in the same folder or file.
-`__context__` : All the HOC and Context purposes that the application may have. For example, here we can see the withAuth.tsx
-`__pages__` : All the pages that finally generate the route. In the new versions of nextjs, there is a new routing system, however I have decided to keep the old one because it is what I have used and know the most.
-`__redux__` : All slices for state management, the application provider and the store.
-`__services__` : Todos los servicios que consumen peticiones http para el uso de la API `https://reqres.in/`
-`__shared__` : All the cross-cutting source code of the application. It can be const, helpers, hooks, interfaces
+* `__mocks__` : All dummy data for tests
+* `__tests__` : All unit tests
+* `__components__` : All the components that are used in the whole application. If some component has some constant, an interface or something that will be used only in that component, I declare it and create it in the same folder or file.
+* `__context__` : All the HOC and Context purposes that the application may have. For example, here we can see the withAuth.tsx
+* `__pages__` : All the pages that finally generate the route. In the new versions of nextjs, there is a new routing system, however I have decided to keep the old one because it is what I have used and know the most.
+* `__redux__` : All slices for state management, the application provider and the store.
+* `__services__` : Todos los servicios que consumen peticiones http para el uso de la API `https://reqres.in/`
+* `__shared__` : All the cross-cutting source code of the application. It can be const, helpers, hooks, interfaces
 
 
 ##### Decisions
