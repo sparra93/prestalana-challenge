@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const PanelContainer = styled.div`
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
   background-color: #e8e8e8e0;
   border: 1px solid #ddd;
   border-radius: 8px;

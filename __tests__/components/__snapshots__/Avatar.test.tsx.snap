@@ -3,28 +3,28 @@
 exports[`Avatar Component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-d5fbb163-0 eTSrFH"
+    class="sc-2b2a1bd8-0 doDeWs"
   >
     <img
       alt="User Avatar"
-      class="sc-d5fbb163-1 eJNQmk"
+      class="sc-2b2a1bd8-1 cVpnb"
       src="https://reqres.in/img/faces/7-image.jpg"
     />
     <div
-      class="sc-d5fbb163-2 fXMFxl"
+      class="sc-2b2a1bd8-2 eVjdKf"
     >
       <span
-        class="sc-d5fbb163-3 ldmCxV"
+        class="sc-2b2a1bd8-3 dbyjgu"
       >
         Michael
       </span>
       <span
-        class="sc-d5fbb163-4 HZnYy"
+        class="sc-2b2a1bd8-4 BLLUx"
       >
         michael.lawson@reqres.in
       </span>
       <button
-        class="sc-d5fbb163-5 jFahZb"
+        class="sc-2b2a1bd8-5 kfcqpw"
       >
         Cerrar Sesión
       </button>

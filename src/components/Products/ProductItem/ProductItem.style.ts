@@ -54,9 +54,19 @@ export const DetailLabel = styled.span`
   color: #333;
 `;
 
-export const IconButton = styled.img`
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+export const ButtonContainer = styled.div`
+  display: flex;
+  padding-top: 30px;
+`;
+export const AddedMessageContainer = styled.div`
+  padding: 10px;
+  color: #333;
+`;
+export const Button = styled.button`
   cursor: pointer;
+  width: 70px;
+`;
+export const IconButton = styled.img`
+  width: 32px;
+  height: auto;
 `;

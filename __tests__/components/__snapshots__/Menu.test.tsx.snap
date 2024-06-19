@@ -20,7 +20,7 @@ exports[`Menu Component matches snapshot 1`] = `
           data-testid="product-list-page"
           href="/Products/List"
         >
-          List
+          Products
         </a>
       </div>
     </div>

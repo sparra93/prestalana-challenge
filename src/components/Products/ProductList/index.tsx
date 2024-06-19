@@ -20,6 +20,7 @@ const ProductList: React.FC = () => {
   const dispatch = useDispatch();
   const favorites = useSelector(selectFavorites);
   const [dragItem, setDragItem] = useState<IProduct | null>(null);
+  const [container, setContainer] = useState<number>();
 
   const productsFiltered = useSelector((state: RootState) => {
     const { yearFilter, nameFilter, colorFilter, pantoneFilter } = state.filter;
@@ -51,6 +52,15 @@ const ProductList: React.FC = () => {
     product: IProduct,
   ) => {
     setDragItem(product);
+    setContainer(1);
+  };
+
+  const handleDragStartFavorites = (
+    e: React.DragEvent<HTMLDivElement>,
+    product: IProduct,
+  ) => {
+    setDragItem(product);
+    setContainer(2);
   };
 
   const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
@@ -67,7 +77,9 @@ const ProductList: React.FC = () => {
 
   const handleDropRemove = (e: React.DragEvent<HTMLDivElement>): boolean => {
     e.preventDefault();
-    if (!dragItem) return false;
+    console.log('info');
+    if (!dragItem || container === 1) return false;
+
     dispatch(removeFromFavorites(dragItem.id));
 
     return true;
@@ -102,7 +114,7 @@ const ProductList: React.FC = () => {
               key={product.id}
               product={product}
               isDraggable
-              handleDragStart={handleDragStart}
+              handleDragStart={handleDragStartFavorites}
               handleDragOver={handleDragOver}
               handleDrop={handleDrop}
             />

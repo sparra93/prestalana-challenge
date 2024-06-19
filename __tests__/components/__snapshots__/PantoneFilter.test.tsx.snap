@@ -3,27 +3,27 @@
 exports[`PantoneFilter Component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-744fc5c6-0 duDilm"
+    class="sc-c77c5486-0 gRkaAU"
     draggable="false"
   >
     <div
-      class="sc-744fc5c6-1 erZYpt"
+      class="sc-c77c5486-1 iDpoqc"
     >
       <span>
         Pantone
       </span>
     </div>
     <div
-      class="sc-744fc5c6-2 dYyKkL"
+      class="sc-c77c5486-2 eTCBvC"
     >
       <ul
-        class="sc-59331570-0 iUuOye"
+        class="sc-25792f0-0 gfAaqg"
       >
         <li
-          class="sc-59331570-1 iOinvi"
+          class="sc-25792f0-1 krontY"
         >
           <input
-            class="sc-59331570-3 hbfaQV"
+            class="sc-25792f0-3 iUBIxP"
             data-testid="checkbox-2000"
             id="checkbox-2000"
             name="checkbox-2000"
@@ -31,17 +31,17 @@ exports[`PantoneFilter Component matches snapshot 1`] = `
             value="2000"
           />
           <label
-            class="sc-59331570-2 cVjGuP"
+            class="sc-25792f0-2 jKYfwo"
             for="checkbox-2000"
           >
             2000
           </label>
         </li>
         <li
-          class="sc-59331570-1 iOinvi"
+          class="sc-25792f0-1 krontY"
         >
           <input
-            class="sc-59331570-3 hbfaQV"
+            class="sc-25792f0-3 iUBIxP"
             data-testid="checkbox-2001"
             id="checkbox-2001"
             name="checkbox-2001"
@@ -49,17 +49,17 @@ exports[`PantoneFilter Component matches snapshot 1`] = `
             value="2001"
           />
           <label
-            class="sc-59331570-2 cVjGuP"
+            class="sc-25792f0-2 jKYfwo"
             for="checkbox-2001"
           >
             2001
           </label>
         </li>
         <li
-          class="sc-59331570-1 iOinvi"
+          class="sc-25792f0-1 krontY"
         >
           <input
-            class="sc-59331570-3 hbfaQV"
+            class="sc-25792f0-3 iUBIxP"
             data-testid="checkbox-2002"
             id="checkbox-2002"
             name="checkbox-2002"
@@ -67,17 +67,17 @@ exports[`PantoneFilter Component matches snapshot 1`] = `
             value="2002"
           />
           <label
-            class="sc-59331570-2 cVjGuP"
+            class="sc-25792f0-2 jKYfwo"
             for="checkbox-2002"
           >
             2002
           </label>
         </li>
         <li
-          class="sc-59331570-1 iOinvi"
+          class="sc-25792f0-1 krontY"
         >
           <input
-            class="sc-59331570-3 hbfaQV"
+            class="sc-25792f0-3 iUBIxP"
             data-testid="checkbox-2003"
             id="checkbox-2003"
             name="checkbox-2003"
@@ -85,17 +85,17 @@ exports[`PantoneFilter Component matches snapshot 1`] = `
             value="2003"
           />
           <label
-            class="sc-59331570-2 cVjGuP"
+            class="sc-25792f0-2 jKYfwo"
             for="checkbox-2003"
           >
             2003
           </label>
         </li>
         <li
-          class="sc-59331570-1 iOinvi"
+          class="sc-25792f0-1 krontY"
         >
           <input
-            class="sc-59331570-3 hbfaQV"
+            class="sc-25792f0-3 iUBIxP"
             data-testid="checkbox-2004"
             id="checkbox-2004"
             name="checkbox-2004"
@@ -103,17 +103,17 @@ exports[`PantoneFilter Component matches snapshot 1`] = `
             value="2004"
           />
           <label
-            class="sc-59331570-2 cVjGuP"
+            class="sc-25792f0-2 jKYfwo"
             for="checkbox-2004"
           >
             2004
           </label>
         </li>
         <li
-          class="sc-59331570-1 iOinvi"
+          class="sc-25792f0-1 krontY"
         >
           <input
-            class="sc-59331570-3 hbfaQV"
+            class="sc-25792f0-3 iUBIxP"
             data-testid="checkbox-2005"
             id="checkbox-2005"
             name="checkbox-2005"
@@ -121,7 +121,7 @@ exports[`PantoneFilter Component matches snapshot 1`] = `
             value="2005"
           />
           <label
-            class="sc-59331570-2 cVjGuP"
+            class="sc-25792f0-2 jKYfwo"
             for="checkbox-2005"
           >
             2005

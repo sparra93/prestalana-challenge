@@ -1,17 +1,10 @@
 import type { ReactElement } from 'react';
-import React from 'react';
+import React, { useState } from 'react';
 
 import type { IProduct } from '@/shared/Interfaces/Product.interface';
 
-import {
-  DetailLabel,
-  IconButton,
-  ProductContainer,
-  ProductDetails,
-  ProductInfo,
-  ProductName,
-  ProductTag,
-} from './ProductItem.style';
+import ProductCard from '../ProductCard';
+import { ProductContainer, ProductTag } from './ProductItem.style';
 
 interface ProductItemProps {
   product: IProduct;
@@ -33,6 +26,17 @@ const ProductItem: React.FC<ProductItemProps> = ({
   handleDragOver,
   handleDrop,
 }): ReactElement => {
+  const [added, setAdded] = useState(false);
+  const onClickAddButton = (
+    event: React.MouseEvent<HTMLImageElement>,
+    productItem: IProduct,
+  ) => {
+    onAddToCart(productItem);
+    setAdded(true);
+    setTimeout(() => {
+      setAdded(false);
+    }, 5000);
+  };
   return (
     <ProductContainer
       id={`product${product.id}`}
@@ -43,23 +47,14 @@ const ProductItem: React.FC<ProductItemProps> = ({
       onDrop={(e) => handleDrop(e, product)}
     >
       <ProductTag color={product.color} />
-      <ProductDetails>
-        <ProductName>{product.name.toUpperCase()}</ProductName>
-        <ProductInfo>
-          <DetailLabel>Year:</DetailLabel> {product.year}
-        </ProductInfo>
-        <ProductInfo>
-          <DetailLabel>Pantone:</DetailLabel> {product.pantone_value}
-        </ProductInfo>
-
-        <div>
-          <IconButton
-            src="/assets/icons/add-to-cart.png"
-            alt="Add to Cart"
-            onClick={() => onAddToCart(product)}
-          />
-        </div>
-      </ProductDetails>
+      <ProductCard
+        key={product.id}
+        product={product}
+        showAddCart
+        handleAddCart={(event) => {
+          onClickAddButton(event, product);
+        }}
+      />
     </ProductContainer>
   );
 };

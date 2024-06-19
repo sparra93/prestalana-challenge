@@ -49,18 +49,34 @@ const productSlice = createSlice({
       }
       productSlice.caseReducers.setLocalStorageFavorites(state);
     },
-    removeFromCart(state, action: PayloadAction<number>) {
+    removeFromCart(state, action: PayloadAction<ICartProduct>) {
+      state.cartCountTotal -= action.payload.quantity;
       state.cart = state.cart.filter(
-        (product) => product.id !== action.payload,
+        (product) => product.id !== action.payload.id,
       );
-      const index = state.cart.findIndex(
-        (product) => product.id === action.payload,
-      );
-      if (index !== -1) {
-        state.cart.splice(index, 1);
-        state.cartCountTotal -= 1;
-      }
     },
+    decreaseQuantity(state, action: PayloadAction<ICartProduct>) {
+      const newQuantity = action.payload.quantity - 1;
+      const index = state.cart.findIndex(
+        (product) => product.id === action.payload.id,
+      );
+      state.cart[index].quantity = newQuantity;
+      if (newQuantity < 1) {
+        state.cart = state.cart.filter(
+          (product) => product.id !== action.payload.id,
+        );
+      }
+      state.cartCountTotal -= 1;
+    },
+    increaseQuantity(state, action: PayloadAction<ICartProduct>) {
+      const newQuantity = action.payload.quantity + 1;
+      const index = state.cart.findIndex(
+        (product) => product.id === action.payload.id,
+      );
+      state.cart[index].quantity = newQuantity;
+      state.cartCountTotal += 1;
+    },
+
     removeFromFavorites(state, action: PayloadAction<number>) {
       state.favorites = state.favorites.filter(
         (product) => product.id !== action.payload,
@@ -115,6 +131,8 @@ export const {
   addToFavorites,
   removeFromCart,
   removeFromFavorites,
+  decreaseQuantity,
+  increaseQuantity,
 } = productSlice.actions;
 export const selectProducts = (state: RootState): IProduct[] =>
   state.products.products;

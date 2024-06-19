@@ -3,18 +3,18 @@
 exports[`NameFilter Component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-744fc5c6-0 duDilm"
+    class="sc-c77c5486-0 gRkaAU"
     draggable="false"
   >
     <div
-      class="sc-744fc5c6-1 erZYpt"
+      class="sc-c77c5486-1 iDpoqc"
     >
       <span>
         Nombre
       </span>
     </div>
     <div
-      class="sc-744fc5c6-2 dYyKkL"
+      class="sc-c77c5486-2 eTCBvC"
     >
       <input
         class="sc-93af5939-0 bHotKZ"

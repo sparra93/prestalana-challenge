@@ -13,7 +13,11 @@ After that, please run the following command:
 npm i
 ```
 
-Before start the proyect, please create a file `.env.local` in the root project
+Before start the proyect, please create a file `.env.local` in the root project whit this
+
+```bash
+REMOTE_API_URL=https://reqres.in/api
+```
 
 Finally, please run the following command:
 ```bash

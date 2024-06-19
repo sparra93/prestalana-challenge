@@ -12,7 +12,7 @@ const Menu: React.FC = () => {
       <SubMenuContainer>
         <MenuItem>
           <Link href="/Products/List" passHref data-testid="product-list-page">
-            List
+            Products
           </Link>
         </MenuItem>
       </SubMenuContainer>

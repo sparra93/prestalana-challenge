@@ -3,82 +3,140 @@
 exports[`Cart Component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-ebf233ff-0 cSFOky"
+    class="sc-43efcc98-0 cEqqeg"
   >
     <div
-      class="sc-ebf233ff-1 kGXRWM"
+      class="sc-c77c5486-0 gRkaAU"
+      draggable="false"
     >
-      <img
-        alt="cerulean"
-        class="sc-ebf233ff-2 ffgBwu"
-        src="/assets/icons/shopping-bag.png"
-      />
       <div
-        class="sc-ebf233ff-3 fqKFUT"
+        class="sc-c77c5486-1 iDpoqc"
       >
-        <span
-          class="sc-ebf233ff-4 eSCPjq"
-        >
-          CERULEAN
+        <span>
+          Shopping bag
         </span>
-        <p
-          class="sc-ebf233ff-5 furSap"
-        >
-          <span
-            style="font-weight: bold;"
-          >
-            Year:
-          </span>
-           2000
-        </p>
-        <p
-          class="sc-ebf233ff-5 furSap"
-        >
-          <span
-            style="font-weight: bold;"
-          >
-            Pantone:
-          </span>
-           15-4020
-        </p>
       </div>
-    </div>
-    <div
-      class="sc-ebf233ff-1 kGXRWM"
-    >
-      <img
-        alt="fuchsia rose"
-        class="sc-ebf233ff-2 ffgBwu"
-        src="/assets/icons/shopping-bag.png"
-      />
       <div
-        class="sc-ebf233ff-3 fqKFUT"
+        class="sc-c77c5486-2 eTCBvC"
       >
-        <span
-          class="sc-ebf233ff-4 eSCPjq"
+        <div
+          class="sc-aaf8b9d0-0 fMEWVM"
         >
-          FUCHSIA ROSE
-        </span>
-        <p
-          class="sc-ebf233ff-5 furSap"
-        >
-          <span
-            style="font-weight: bold;"
+          <img
+            alt="Remove from cart"
+            class="sc-aaf8b9d0-6 dpuVbM"
+            src="/assets/icons/remove.png"
+          />
+          <img
+            alt="Add to favorites"
+            class="sc-aaf8b9d0-6 dpuVbM"
+            src="/assets/icons/out.png"
+          />
+          <img
+            alt="cerulean"
+            class="sc-aaf8b9d0-1 danQxr"
+            src="/assets/icons/shopping-bag.png"
+          />
+          <div
+            class="sc-aaf8b9d0-2 klFPLU"
           >
-            Year:
-          </span>
-           2001
-        </p>
-        <p
-          class="sc-ebf233ff-5 furSap"
-        >
-          <span
-            style="font-weight: bold;"
+            <span
+              class="sc-aaf8b9d0-3 gGrpGp"
+            >
+              cerulean
+            </span>
+            <p
+              class="sc-aaf8b9d0-4"
+            >
+              <span
+                class="sc-aaf8b9d0-5 imhxSB"
+              >
+                Year:
+              </span>
+               2000
+            </p>
+            <p
+              class="sc-aaf8b9d0-4"
+            >
+              <span
+                class="sc-aaf8b9d0-5 imhxSB"
+              >
+                Pantone:
+              </span>
+               15-4020
+            </p>
+          </div>
+          <button
+            class="sc-aaf8b9d0-7 cAoJar"
           >
-            Pantone:
-          </span>
-           17-2031
-        </p>
+            -
+          </button>
+          1
+          <button
+            class="sc-aaf8b9d0-7 cAoJar"
+          >
+            +
+          </button>
+        </div>
+        <div
+          class="sc-aaf8b9d0-0 fMEWVM"
+        >
+          <img
+            alt="Remove from cart"
+            class="sc-aaf8b9d0-6 dpuVbM"
+            src="/assets/icons/remove.png"
+          />
+          <img
+            alt="Add to favorites"
+            class="sc-aaf8b9d0-6 dpuVbM"
+            src="/assets/icons/out.png"
+          />
+          <img
+            alt="fuchsia rose"
+            class="sc-aaf8b9d0-1 danQxr"
+            src="/assets/icons/shopping-bag.png"
+          />
+          <div
+            class="sc-aaf8b9d0-2 klFPLU"
+          >
+            <span
+              class="sc-aaf8b9d0-3 gGrpGp"
+            >
+              fuchsia rose
+            </span>
+            <p
+              class="sc-aaf8b9d0-4"
+            >
+              <span
+                class="sc-aaf8b9d0-5 imhxSB"
+              >
+                Year:
+              </span>
+               2001
+            </p>
+            <p
+              class="sc-aaf8b9d0-4"
+            >
+              <span
+                class="sc-aaf8b9d0-5 imhxSB"
+              >
+                Pantone:
+              </span>
+               17-2031
+            </p>
+          </div>
+          <button
+            class="sc-aaf8b9d0-7 cAoJar"
+          >
+            -
+          </button>
+          1
+          <button
+            class="sc-aaf8b9d0-7 cAoJar"
+          >
+            +
+          </button>
+        </div>
       </div>
     </div>
   </div>

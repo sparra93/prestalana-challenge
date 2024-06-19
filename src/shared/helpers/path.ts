@@ -5,7 +5,7 @@ export const ENDPOINT_URL = {
     GETUSER: '/users/',
   },
   PRODUCT: {
-    ALL: '/unknown?page=1&per_page=20',
+    ALL: '/unknown?page=1&per_page=10',
   },
 };
 

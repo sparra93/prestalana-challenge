@@ -17,11 +17,13 @@ export const AvatarImg = styled.img`
 export const UserInfo = styled.div`
   display: flex;
   flex-direction: column;
+  font-weight: 200;
 `;
 
 export const UserName = styled.span`
   font-weight: bold;
   font-size: 1em;
+  font-weight: 700;
 `;
 
 export const UserEmail = styled.span`

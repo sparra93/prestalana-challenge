@@ -14,6 +14,7 @@ export const CheckboxListItem = styled.li`
 
 export const CheckboxLabel = styled.label`
   margin-left: 8px;
+  font-weight: 200;
   font-size: 1em;
   color: #333;
 `;
