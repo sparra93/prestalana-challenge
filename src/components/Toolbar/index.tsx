@@ -17,7 +17,7 @@ const Toolbar: React.FC = () => {
   return (
     <ToolbarContainer>
       <ToolbarTitle>My Personal Dashboard</ToolbarTitle>
-      <Link href="/cart" passHref data-testid="go-to-cart">
+      <Link href="/Cart" passHref data-testid="go-to-cart">
         <CartIconContainer>
           <CartIcon src="/assets/icons/shopping-bag.png" alt="Cart Icon" />
           <Badge>{productCount}</Badge>
