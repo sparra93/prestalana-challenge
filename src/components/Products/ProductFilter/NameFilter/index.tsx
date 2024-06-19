@@ -2,7 +2,8 @@ import type { ReactElement } from 'react';
 import React from 'react';
 
 import Panel from '@/components/Panel';
-import { Input } from '@/components/Products/ProductFilter/NameFilter/NameFilter.style';
+
+import { Input } from './NameFilter.style';
 
 interface NameFilterProps {
   onChange: (name: string) => void;

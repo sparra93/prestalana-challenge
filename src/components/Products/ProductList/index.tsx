@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import Panel from '@/components/Panel';
 import ProductItem from '@/components/Products/ProductItem';
-import { ProductContainer } from '@/components/Products/ProductList/ProductList.style';
 import {
   addToCart,
   addToFavorites,
@@ -13,6 +12,8 @@ import {
 import type { RootState } from '@/redux/store';
 import { useFetchProducts } from '@/shared/hooks/useProducts';
 import type { IProduct } from '@/shared/Interfaces/Product.interface';
+
+import { ProductContainer } from './ProductList.style';
 
 const ProductList: React.FC = () => {
   const { products, loadProducts } = useFetchProducts();

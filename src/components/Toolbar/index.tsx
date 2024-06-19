@@ -1,14 +1,15 @@
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
 
+import { selectCartCountTotal } from '@/redux/features/productSlice';
+
 import {
   Badge,
   CartIcon,
   CartIconContainer,
   ToolbarContainer,
   ToolbarTitle,
-} from '@/components/Toolbar/Toolbar.style';
-import { selectCartCountTotal } from '@/redux/features/productSlice';
+} from './Toolbar.style';
 
 const Toolbar: React.FC = () => {
   const productCount = useSelector(selectCartCountTotal);

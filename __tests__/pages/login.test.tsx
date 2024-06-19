@@ -33,10 +33,10 @@ describe('LoginPage', () => {
     jest.clearAllMocks();
   });
 
-  it('should redirect to /products/list if user is authenticated', () => {
+  it('should redirect to /Products/List if user is authenticated', () => {
     render(<LoginPage isAuthenticated />);
 
-    expect(push).toHaveBeenCalledWith('/products/list');
+    expect(push).toHaveBeenCalledWith('/Products/List');
   });
 
   it('should render the LoginForm if the user is not authenticated', () => {

@@ -3,40 +3,40 @@
 exports[`Menu Component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-fd718eda-0"
+    class="sc-9101dc7-1 jBNtAt"
   >
     <div
-      class="sc-f151d49-0 kKiPHK"
+      class="sc-9101dc7-0 elFxUS"
     >
-      Products
+      Opciones
     </div>
     <div
-      class="sc-fd718eda-1 hLCJwl"
+      class="sc-9101dc7-2"
     >
-      <a
-        data-testid="product-list-page"
-        href="/products/list"
+      <div
+        class="sc-3a724431-0 iQabbx"
       >
-        <div
-          class="sc-f151d49-0 kKiPHK"
+        <a
+          data-testid="product-list-page"
+          href="/Products/List"
         >
           List
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
     <div
-      class="sc-fd718eda-1 hLCJwl"
+      class="sc-9101dc7-2"
     >
-      <a
-        data-testid="cart-page"
-        href="/cart"
+      <div
+        class="sc-3a724431-0 iQabbx"
       >
-        <div
-          class="sc-f151d49-0 kKiPHK"
+        <a
+          data-testid="cart-page"
+          href="/Cart"
         >
           Cart
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 </DocumentFragment>

@@ -1,6 +1,8 @@
 import type { ReactElement } from 'react';
 import React from 'react';
 
+import type { IProduct } from '@/shared/Interfaces/Product.interface';
+
 import {
   DetailLabel,
   IconButton,
@@ -9,8 +11,7 @@ import {
   ProductInfo,
   ProductName,
   ProductTag,
-} from '@/components/Products/ProductItem/ProductItem.style';
-import type { IProduct } from '@/shared/Interfaces/Product.interface';
+} from './ProductItem.style';
 
 interface ProductItemProps {
   product: IProduct;

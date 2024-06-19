@@ -32,7 +32,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   - Persist favorites by user.
 - Product listing.
 - Product favorites.
-  - Add favorito by Drag & Drop.
+  - Add favorite by Drag & Drop.
 ```
 ##### Breve explicación
 The project is built with Nextjs 14, React 18, TypeScript 5 and reduxjs/toolkit. I decided to use redux toolkit because its configuration is easier and faster to set up state management in your application compared to previous versions. As for Next, it is a very powerful framework that thanks to its generator, allowed me to save a lot of initial configuration and I was able to get an initial project structure.

@@ -1,6 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
+import { selectCart } from '@/redux/features/productSlice';
+
 import {
   CartItem,
   CartItemContainer,
@@ -8,8 +10,7 @@ import {
   ItemImage,
   ItemName,
   ItemProperty,
-} from '@/components/Cart/Cart.style';
-import { selectCart } from '@/redux/features/productSlice';
+} from './Cart.style';
 
 const Cart: React.FC = () => {
   const cartProducts = useSelector(selectCart);

@@ -1,14 +1,14 @@
-// index.test.ts
-import * as Module from '@/components/Login';
-import { getFormaData } from '@/components/Login/';
-import { LoginFormInput } from '@/components/Login/login.constant';
+import * as constantModule from '@/components/login/login.constant';
+import { LoginFormInput } from '@/components/login/login.constant';
+import * as helperModule from '@/components/login/login.helper';
+import { getFormaData } from '@/components/login/login.helper';
 
 describe('Module Exports', () => {
   it('should export LoginFormInput from login.constant', () => {
-    expect(Module.LoginFormInput).toBe(LoginFormInput);
+    expect(constantModule.LoginFormInput).toBe(LoginFormInput);
   });
 
   it('should export getFormaData from login.helper', () => {
-    expect(Module.getFormaData).toBe(getFormaData);
+    expect(helperModule.getFormaData).toBe(getFormaData);
   });
 });

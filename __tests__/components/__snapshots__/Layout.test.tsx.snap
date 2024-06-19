@@ -3,7 +3,7 @@
 exports[`Layout Component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-aa734ecb-0 hUWNgF"
+    class="sc-d0ae5099-0 kwXVNk"
   >
     <header
       class="sc-ece30d93-0 hPavrx"
@@ -34,7 +34,7 @@ exports[`Layout Component matches snapshot 1`] = `
       </a>
     </header>
     <div
-      class="sc-aa734ecb-1 nPLO"
+      class="sc-d0ae5099-1 fOSyUL"
     >
       <section
         class="sc-6d8e35a2-0 bpKibS"
@@ -64,10 +64,51 @@ exports[`Layout Component matches snapshot 1`] = `
         </div>
       </section>
       <div
-        class="sc-aa734ecb-2 leAkJT"
+        class="sc-d0ae5099-2 cpQzcA"
       >
-        <div>
-          Content
+        <div
+          class="sc-9101dc7-1 jBNtAt"
+        >
+          <div
+            class="sc-9101dc7-0 elFxUS"
+          >
+            Opciones
+          </div>
+          <div
+            class="sc-9101dc7-2"
+          >
+            <div
+              class="sc-3a724431-0 iQabbx"
+            >
+              <a
+                data-testid="product-list-page"
+                href="/Products/List"
+              >
+                List
+              </a>
+            </div>
+          </div>
+          <div
+            class="sc-9101dc7-2"
+          >
+            <div
+              class="sc-3a724431-0 iQabbx"
+            >
+              <a
+                data-testid="cart-page"
+                href="/Cart"
+              >
+                Cart
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-d0ae5099-3 Yvdxn"
+        >
+          <div>
+            Content
+          </div>
         </div>
       </div>
     </div>

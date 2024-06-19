@@ -2,14 +2,15 @@ import type { ReactNode } from 'react';
 import React from 'react';
 
 import Menu from '@/components//Menu';
+import Toolbar from '@/components/Toolbar';
+
+import Sidebar from '../SideBar';
 import {
   ChildrenContent,
   Content,
   LayoutContainer,
   MainContainer,
-} from '@/components/Layout/MainLayout.style';
-import Sidebar from '@/components/Sidebar';
-import Toolbar from '@/components/Toolbar';
+} from './MainLayout.style';
 
 interface MainLayoutProps {
   children: ReactNode;

@@ -8,11 +8,11 @@ describe('Menu Component', () => {
     renderWithProviders(<Menu />);
     expect(screen.getByTestId('product-list-page')).toHaveAttribute(
       'href',
-      '/products/list',
+      '/Products/List',
     );
   });
 
-  it('should have a <Link/> that redirect to /products/list page', () => {
+  it('should have a <Link/> that redirect to /Products/List page', () => {
     renderWithProviders(<Menu />);
 
     const link = screen.getByTestId('product-list-page');

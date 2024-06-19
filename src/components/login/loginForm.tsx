@@ -1,18 +1,13 @@
 import type { FormEvent, ReactElement } from 'react';
 import { useState } from 'react';
 
-import { getFormaData, LoginFormInput } from '@/components/Login';
-import {
-  Button,
-  Container,
-  Form,
-  Input,
-  Label,
-  Logo,
-} from '@/components/Login/LoginForm.style';
 import { signIn } from '@/services/auth';
 import { EMAIL_NAME, TOKEN_NAME } from '@/shared/constants/sessionStorage';
 import type { IAccount } from '@/shared/Interfaces/Account.interface';
+
+import { LoginFormInput } from './login.constant';
+import { getFormaData } from './login.helper';
+import { Button, Container, Form, Input, Label, Logo } from './loginForm.style';
 
 interface ILoginFormProps {}
 
@@ -32,7 +27,7 @@ const LoginForm: React.FC<ILoginFormProps> = (): ReactElement => {
       setLoading(true);
       const response = await signIn(account);
       if (response.ok) {
-        window.location.href = '/products/list';
+        window.location.href = '/Products/List';
       } else {
         setLoading(false);
       }

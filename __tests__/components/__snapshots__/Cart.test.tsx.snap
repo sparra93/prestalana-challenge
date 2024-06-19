@@ -3,58 +3,83 @@
 exports[`Cart Component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-40b35703-0 jYWBCy"
+    class="sc-ebf233ff-0 cSFOky"
   >
-    <h2
-      class="sc-40b35703-1 jRrtTp"
-    >
-      Mi Carrito
-    </h2>
     <div
-      class="sc-40b35703-2 gSPIwx"
+      class="sc-ebf233ff-1 kGXRWM"
     >
+      <img
+        alt="cerulean"
+        class="sc-ebf233ff-2 ffgBwu"
+        src="/assets/icons/shopping-bag.png"
+      />
       <div
-        class="sc-40b35703-3 dGZvXn"
+        class="sc-ebf233ff-3 fqKFUT"
       >
         <span
-          class="sc-40b35703-4 cNJDYj"
+          class="sc-ebf233ff-4 eSCPjq"
         >
-          cerulean
+          CERULEAN
         </span>
-        <span
-          class="sc-40b35703-5 jhRvez"
+        <p
+          class="sc-ebf233ff-5 furSap"
         >
-          2000
-        </span>
+          <span
+            style="font-weight: bold;"
+          >
+            Year:
+          </span>
+           2000
+        </p>
+        <p
+          class="sc-ebf233ff-5 furSap"
+        >
+          <span
+            style="font-weight: bold;"
+          >
+            Pantone:
+          </span>
+           15-4020
+        </p>
       </div>
-      <span
-        class="sc-40b35703-6 cbSndx"
-      >
-        Qty 1
-      </span>
     </div>
     <div
-      class="sc-40b35703-2 gSPIwx"
+      class="sc-ebf233ff-1 kGXRWM"
     >
+      <img
+        alt="fuchsia rose"
+        class="sc-ebf233ff-2 ffgBwu"
+        src="/assets/icons/shopping-bag.png"
+      />
       <div
-        class="sc-40b35703-3 dGZvXn"
+        class="sc-ebf233ff-3 fqKFUT"
       >
         <span
-          class="sc-40b35703-4 cNJDYj"
+          class="sc-ebf233ff-4 eSCPjq"
         >
-          fuchsia rose
+          FUCHSIA ROSE
         </span>
-        <span
-          class="sc-40b35703-5 jhRvez"
+        <p
+          class="sc-ebf233ff-5 furSap"
         >
-          2001
-        </span>
+          <span
+            style="font-weight: bold;"
+          >
+            Year:
+          </span>
+           2001
+        </p>
+        <p
+          class="sc-ebf233ff-5 furSap"
+        >
+          <span
+            style="font-weight: bold;"
+          >
+            Pantone:
+          </span>
+           17-2031
+        </p>
       </div>
-      <span
-        class="sc-40b35703-6 cbSndx"
-      >
-        Qty 1
-      </span>
     </div>
   </div>
 </DocumentFragment>

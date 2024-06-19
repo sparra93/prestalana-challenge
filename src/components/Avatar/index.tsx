@@ -1,6 +1,9 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { logout } from '@/redux/features/userSlice';
+import type { RootState } from '@/redux/store';
+
 import {
   AvatarImg,
   LogoutButton,
@@ -8,9 +11,7 @@ import {
   UserInfo,
   UserName,
   UserSection,
-} from '@/components/Avatar/Avatar.style';
-import { logout } from '@/redux/features/userSlice';
-import type { RootState } from '@/redux/store';
+} from './Avatar.style';
 
 interface AvatarProps {}
 
