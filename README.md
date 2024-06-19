@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+You can see the project here --> [http://prestalana-challenge.vercel.app](https://prestalana-challenge.vercel.app)
+
+
+
+
 First, you should install node 20 by:
 
 - [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm) - All instructions.
