@@ -2,10 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-You can see the project here --> [http://prestalana-challenge.vercel.app](https://prestalana-challenge.vercel.app)
+You can see the project here --> [https://prestalana-challenge.vercel.app](https://prestalana-challenge.vercel.app)
 
-
-
+This project comsume the API  [https://reqres.in](https://reqres.in)
 
 First, you should install node 20 by:
 
