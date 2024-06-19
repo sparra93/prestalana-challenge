@@ -39,6 +39,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ```
 - User login.
   - Persist favorites by user.
+  - Persist cart by user.
 - Product listing.
 - Product favorites.
   - Add favorite by Drag & Drop.

@@ -4,7 +4,11 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import type { RootState } from '@/redux/store';
 import { fetchProducts } from '@/services/products';
 import { productSliceInitialState } from '@/shared/constants/products';
-import { EMAIL_NAME, FAVORITES_NAME } from '@/shared/constants/sessionStorage';
+import {
+  CART_NAME,
+  EMAIL_NAME,
+  FAVORITES_NAME,
+} from '@/shared/constants/sessionStorage';
 import {
   getFromLocalStorage,
   getFromSessionStorage,
@@ -37,6 +41,7 @@ const productSlice = createSlice({
       }
 
       state.cartCountTotal += 1;
+      productSlice.caseReducers.setLocalStorageCart(state);
     },
     addToFavorites(state, action: PayloadAction<IProduct>) {
       const productToAdd = action.payload;
@@ -54,6 +59,7 @@ const productSlice = createSlice({
       state.cart = state.cart.filter(
         (product) => product.id !== action.payload.id,
       );
+      productSlice.caseReducers.setLocalStorageCart(state);
     },
     decreaseQuantity(state, action: PayloadAction<ICartProduct>) {
       const newQuantity = action.payload.quantity - 1;
@@ -67,6 +73,7 @@ const productSlice = createSlice({
         );
       }
       state.cartCountTotal -= 1;
+      productSlice.caseReducers.setLocalStorageCart(state);
     },
     increaseQuantity(state, action: PayloadAction<ICartProduct>) {
       const newQuantity = action.payload.quantity + 1;
@@ -75,6 +82,7 @@ const productSlice = createSlice({
       );
       state.cart[index].quantity = newQuantity;
       state.cartCountTotal += 1;
+      productSlice.caseReducers.setLocalStorageCart(state);
     },
 
     removeFromFavorites(state, action: PayloadAction<number>) {
@@ -93,6 +101,22 @@ const productSlice = createSlice({
         state.favorites = userFavorites;
       }
     },
+    loadCart(state) {
+      const cart = getFromLocalStorage(CART_NAME) || '';
+      const email = getFromSessionStorage(EMAIL_NAME) || '';
+      if (email && cart) {
+        const userCart = !JSON.parse(cart)[email]
+          ? []
+          : JSON.parse(cart)[email];
+        state.cart = userCart;
+        state.cartCountTotal = state.cart.reduce(
+          (accumulator, currentProduct) => {
+            return accumulator + currentProduct.quantity;
+          },
+          0,
+        );
+      }
+    },
     setLocalStorageFavorites: (state) => {
       const favorites = getFromLocalStorage(FAVORITES_NAME) || '';
       const email = getFromSessionStorage(EMAIL_NAME) || '';
@@ -103,6 +127,18 @@ const productSlice = createSlice({
           [email]: state.favorites,
         };
         setLocalStorage(FAVORITES_NAME, JSON.stringify(newFavorites));
+      }
+    },
+    setLocalStorageCart: (state) => {
+      const cart = getFromLocalStorage(CART_NAME) || '';
+      const email = getFromSessionStorage(EMAIL_NAME) || '';
+      if (email) {
+        const prev = cart ? JSON.parse(cart) : {};
+        const newCart = {
+          ...prev,
+          [email]: state.cart,
+        };
+        setLocalStorage(CART_NAME, JSON.stringify(newCart));
       }
     },
   },
@@ -118,6 +154,7 @@ const productSlice = createSlice({
         state.favorites = [];
         state.loaded = true;
         productSlice.caseReducers.loadFavorites(state);
+        productSlice.caseReducers.loadCart(state);
       })
       .addCase(getAll.rejected, (state) => {
         state.loading = false;
