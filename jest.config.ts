@@ -40,7 +40,10 @@ const config: Config = {
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: 'v8',
 
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js', '<rootDir>/jest.global.tsx'],
+  setupFilesAfterEnv: [
+    '<rootDir>/jest.setup.js',
+    '<rootDir>/__tests__/jest.global.tsx',
+  ],
   testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
   preset: 'ts-jest',
   testEnvironment: 'jest-environment-jsdom',
