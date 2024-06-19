@@ -77,7 +77,6 @@ const ProductList: React.FC = () => {
 
   const handleDropRemove = (e: React.DragEvent<HTMLDivElement>): boolean => {
     e.preventDefault();
-    console.log('info');
     if (!dragItem || container === 1) return false;
 
     dispatch(removeFromFavorites(dragItem.id));

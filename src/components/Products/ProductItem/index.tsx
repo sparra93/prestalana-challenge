@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react';
-import React, { useState } from 'react';
+import React from 'react';
 
 import type { IProduct } from '@/shared/Interfaces/Product.interface';
 
@@ -26,16 +26,11 @@ const ProductItem: React.FC<ProductItemProps> = ({
   handleDragOver,
   handleDrop,
 }): ReactElement => {
-  const [added, setAdded] = useState(false);
   const onClickAddButton = (
     event: React.MouseEvent<HTMLImageElement>,
     productItem: IProduct,
   ) => {
     onAddToCart(productItem);
-    setAdded(true);
-    setTimeout(() => {
-      setAdded(false);
-    }, 5000);
   };
   return (
     <ProductContainer

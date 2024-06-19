@@ -14,7 +14,7 @@ import {
 } from './ProductCard.style';
 
 interface ProductCardProps {
-  product: ICartProduct;
+  product: Partial<ICartProduct>;
   showRemove?: boolean;
   showFavorites?: boolean;
   showAddCart?: boolean;
